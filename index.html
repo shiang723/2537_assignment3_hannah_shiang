@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon Matching Game</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- import jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <div class="menu" class="light_mode">
+    <div class="difficulties">
+      <button id="easy_button" class="difficulty_button">Easy</button>
+      <button id="medium_button" class="difficulty_button">Medium</button>
+      <button id="hard_button" class="difficulty_button">Hard</button>
+    </div>
+    <div class="controls">
+      <button id="start_button" class="control_btn not_live">Start</button>
+      <button id="reset_button" class="control_btn not_live">Reset</button>
+    </div>
+    <h3>Number of Clicks: <span id="num_clicks">0</span></h3>
+    <h3>Total Number of Pairs: <span id="pairs">0</span></h3>
+    <h3>Pairs Matched: <span id="pairs_matched">0</span></h3>
+    <h3>Pairs Left: <span id="pairs_left">0</span></h3>
+    <h3 id="time">Timer: <span id="timer">0 seconds</span></h3>
+    <h2 id="message" class="not_live">Press start to play the Memory Game</h2>
+  </div>
+  <div id="game_grid" class="game_grid disabled not_live">
+  </div>
+  <div id="mode_container">
+    <button id="mode">Click to Change between Light or Dark Mode</button>
+  </div>
+</body>
+
+</html>
