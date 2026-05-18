@@ -151,32 +151,37 @@ function setup() {
   $("#easy_button").on(("click"), function () {
     pairs = 3;
     timeLimit = 30;
+    matched = 0;
     difficulty = 'easy';
     loadDifficulty(pairs, difficulty)
     $('#timer').html(`${timeLimit} seconds`);
     $(`#hard_button`).removeClass('active');
     $(`#medium_button`).removeClass('active');
+    $('#pairs_matched').html(matched);
   })
 
   $("#medium_button").on(("click"), function () {
     pairs = 6;
+    matched = 0;
     difficulty = 'medium';
     loadDifficulty(pairs, difficulty)
     timeLimit = 60;
     $('#timer').html(`${timeLimit} seconds`);
     $(`#hard_button`).removeClass('active');
     $(`#easy_button`).removeClass('active');
-
+    $('#pairs_matched').html(matched);
   })
 
   $("#hard_button").on(("click"), function () {
     pairs = 9;
     difficulty = 'hard';
+    matched = 0;
     loadDifficulty(pairs, difficulty)
     timeLimit = 90;
     $('#timer').html(`${timeLimit} seconds`);
     $(`#easy_button`).removeClass('active');
     $(`#medium_button`).removeClass('active');
+    $('#pairs_matched').html(matched);
   })
 
   $(".game_grid").on("click", '.card', function () {
