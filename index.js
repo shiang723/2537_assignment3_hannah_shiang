@@ -126,7 +126,7 @@ function setup() {
     $(".game_grid").removeClass("disabled");
     $('#timer').html(`${timeLimit} seconds left`);
     $("#message").html('Game Start!');
-    $('#pairs_matched').html(`${matched}`);
+    $('#pairs_matched').html(matched);
     $("#easy_button").addClass('disabled');
     $("#medium_button").addClass('disabled');
     $("#hard_button").addClass('disabled');
@@ -145,7 +145,7 @@ function setup() {
     timeLimit = (difficulty === 'easy') ? 30 : ((difficulty === 'medium') ? 60 : 90)
     $('#timer').html(`${timeLimit} seconds`);
     $('#num_clicks').html(click);
-    $('#pairs_matched').html(`${matched}`);
+    $('#pairs_matched').html(matched);
 
   })
   $("#easy_button").on(("click"), function () {
