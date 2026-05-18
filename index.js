@@ -137,6 +137,7 @@ function setup() {
   $('#reset_button').on(('click'), function () {
     clearTimeout(timer)
     click = 0;
+    matched = 0;
     endGame('Game Reset. Press Start to Play');
     loadDifficulty(pairs, difficulty)
     $("#start_button").removeClass('disabled');
