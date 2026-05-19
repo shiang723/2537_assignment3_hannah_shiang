@@ -119,6 +119,8 @@ function setup() {
   let powerUpAvailable = true;
 
   $("#start_button").on(("click"), function () {
+    firstCard = undefined
+    secondCard = undefined
     click = 0;
     matched = 0;
     powerUpAvailable = true;
